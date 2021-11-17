@@ -26,10 +26,7 @@ public class PlayerController : MonoBehaviour
 
         ///Character movement
         horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-
         this.transform.Translate(speed * Time.deltaTime * horizontalInput*Vector3.right);
-        this.transform.Translate(speed * Time.deltaTime * verticalInput * Vector3.forward);
 
 
         //left bound

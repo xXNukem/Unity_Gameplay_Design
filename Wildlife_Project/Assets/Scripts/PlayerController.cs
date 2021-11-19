@@ -42,10 +42,10 @@ public class PlayerController : MonoBehaviour
         }
 
         ///Character actions
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             //launch proyectile
-            Instantiate(projectilePrefab, this.transform.position,projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, this.transform.position+new Vector3(0,1.5f,1.5f),projectilePrefab.transform.rotation);
         }
 
     }

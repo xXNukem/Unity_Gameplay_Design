@@ -17,9 +17,16 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
     {
         //Destroy game object when it get out of screen
-        if (this.transform.position.z > topBound || this.transform.position.z < lowerBound)
+        if (this.transform.position.z > topBound )
         {
             Destroy(this.gameObject);
+        }
+        if(this.transform.position.z < lowerBound)
+        {
+            Destroy(this.gameObject);
+            Debug.Log("GAME OVER!!!");
+
+            Time.timeScale = 0;
         }
 
     }

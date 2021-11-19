@@ -491,7 +491,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -531,6 +531,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
@@ -617,6 +621,8 @@ MonoBehaviour:
   - {fileID: 4763166909381561065, guid: da49a1b6e39f2fc459bd5e191ae866e0, type: 3}
   - {fileID: 3009530654672921098, guid: 82a35f9c6259ce44db9d7507ead2a08b, type: 3}
   animalIndex: 6
+  startDelay: 2
+  spawnInterval: 1.5
 --- !u!4 &789725729
 Transform:
   m_ObjectHideFlags: 0
@@ -625,7 +631,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789725727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.59, y: 0, z: 31.59}
+  m_LocalPosition: {x: 10.59, y: 0, z: 17.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
